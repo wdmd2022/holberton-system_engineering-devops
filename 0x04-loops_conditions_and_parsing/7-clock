@@ -20,4 +20,3 @@ while [[ $hour -le 12 ]]; do
 			;;
 	esac
 done
-
