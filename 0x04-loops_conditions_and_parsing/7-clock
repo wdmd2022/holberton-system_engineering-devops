@@ -8,11 +8,10 @@ while [[ $hour -le 12 ]]; do
 
 	case "$minute" in
 		0)	printf "Hour: %s\n" $hour
-			printf "%s\n" $minute
 			minute=$((minute + 1))
 			;;
 		59)	printf "%s\n" $minute
-			minute=1
+			minute=0
 			hour=$((hour + 1))
 			;;
 		*)	printf "%s\n" $minute
