@@ -1,2 +1,5 @@
 #!/usr/bin/env bash
-# this script does cool things
+# this script displays 'Best School' 10 times
+for ((i=0; i<10; i=i+1));
+do printf "%s\n" "Best School"
+done
