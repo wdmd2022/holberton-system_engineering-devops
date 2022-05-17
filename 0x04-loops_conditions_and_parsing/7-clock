@@ -1,2 +1,23 @@
 #!/usr/bin/env bash
-# this script does cool things
+# this script displays the time for 12 hours and 59 minutes using a while loop.
+
+hour=0
+minute=0
+
+while [[ $hour -le 12 ]]; do
+
+	case "$minute" in
+		0)	printf "Hour: %s\n" $hour
+			printf "%s\n" $minute
+			minute=$((minute + 1))
+			;;
+		59)	printf "%s\n" $minute
+			minute=1
+			hour=$((hour + 1))
+			;;
+		*)	printf "%s\n" $minute
+			minute=$((minute + 1))
+			;;
+	esac
+done
+
