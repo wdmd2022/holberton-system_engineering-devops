@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-# this script does something cool.
+# this script kills the script 7-highlander which does not die from a SIGTERM signal.
+
+kill -s KILL "$(pgrep -l -f "7-highlander" | cut -d ' ' -f 1)"
