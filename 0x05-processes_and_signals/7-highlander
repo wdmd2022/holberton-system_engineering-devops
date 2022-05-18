@@ -1,2 +1,9 @@
 #!/usr/bin/env bash
-# this script does something cool.
+# this script repeats 'To infinity and beyond' and scoffs at attempts to send a SIGINT/CTRL-C to stop it
+
+trap "echo 'I am invincible!!!'" TERM
+
+for ((i=2; i>1; i=i+1)); do
+	echo "To infinity and beyond"
+	sleep 2
+done
