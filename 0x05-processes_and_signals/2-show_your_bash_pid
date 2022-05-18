@@ -1,2 +1,5 @@
 #!/usr/bin/env bash
-# this script does something cool.
+# this script shows your bash PID using the command from script 1 in this repository
+# shellcheck disable=SC2009
+
+ps -faux | grep "bash"
