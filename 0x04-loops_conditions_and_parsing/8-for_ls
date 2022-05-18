@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # this script uses a for loop to display the content of the current directory in list format (only the part after the first dash)
 
-LIST=$(find ./* | cut -s -d "-" -f 2-)
+LIST=$(find ./* | cut -d "-" -f 2-)
 for i in $LIST; do
 	echo "$i"
 done
