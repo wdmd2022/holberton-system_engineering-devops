@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-# this script does something cool.
+# this script displays processes.
+
+ps uxh
