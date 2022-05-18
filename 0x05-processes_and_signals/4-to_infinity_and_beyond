@@ -1,2 +1,7 @@
 #!/usr/bin/env bash
-# this script does something cool.
+# this script displays 'To infinity and beyond' indefinitely but slowly
+
+for ((i=2; i>1; i=i+1)); do
+	echo "To infinity and beyond"
+	sleep 2
+done
